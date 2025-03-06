@@ -1,0 +1,222 @@
+/* general styles */
+body{
+  background-color: #ffce0c5d;
+  height: 100vh;
+  overflow-x: hidden;
+
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.366);
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/* navbar starts ------------------------------------------*/
+.logo h3{
+  
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: normal;
+
+}
+
+/* navbar ends */
+
+/* hero starts --------------------------------------------*/
+
+.hero{   
+  
+  height: 60vh;
+
+}
+
+.hero-container{
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 208, 0, 0.092),rgba(255, 247, 0, 0.111),rgba(255, 247, 0, 0.116)),url(Resources/AIEASE_2025-03-05-16-45-42-694.jpeg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+
+
+.hero-container h2{
+  
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: normal;
+  
+  text-shadow: 1px 1px 1px black;
+
+}
+
+.hero-form input[type="text"]{
+  border: none;
+  height: 40px;
+  width: 50%;
+  border-radius: 5rem 0 0 5rem;
+  outline: none;
+}
+
+.hero-form input[type="submit"]{
+  border: none;
+  height: 40px;
+  width: 20%;
+  border-radius: 0 5rem 5rem 0;
+  color: white;
+  background-color: rgb(205, 50, 50);
+}
+
+/* hero ends */
+
+/* categories starts---------------------------------- */
+
+.categories{
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.categories .container{
+  height: 100%;
+}
+
+.categories .container .row-1{
+  height: 15%;
+
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: normal;
+  
+  text-shadow: 1px 1px 1px rgb(39, 23, 23);
+}
+
+.categories .container .row-2{
+  height: 75%;
+}
+
+.categories .container .row-2 .item-1 section{
+  background: url(Resources/burger.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  
+}
+
+.categories .container .row-2 .item-1 section h4{ 
+  text-shadow: 2px 2px 10px rgb(0, 0, 0);
+ }
+
+ .categories .container .row-2 .item-2 section h4{ 
+  text-shadow: 2px 2px 10px rgb(0, 0, 0);
+ }
+
+ .categories .container .row-2 .item-3 section h4{ 
+  text-shadow: 2px 2px 10px rgb(0, 0, 0);
+ }
+
+.categories .container .row-2 .item-2 section{
+  background: url(Resources/pizza.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.categories .container .row-2 .item-3 section{
+  background: url(Resources/momo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* categories ends---------------------------------- */
+
+
+
+/* explore-food starts------------------------------ */
+
+.explore-food{
+  /* background-color: aqua; */
+  height: fit-content;
+  overflow-x: hidden;
+
+  background-color: #eff3ff81;
+}
+
+
+.explore-food .container{
+  /* background-color: brown; */
+  height: 100%;
+}
+
+.explore-food .container .row-1{
+
+  height: 15%;
+
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: normal;
+  /* background-color: yellow; */
+  text-shadow: 1px 1px 1px rgb(39, 23, 23);
+    
+}
+
+.explore-food .container .row-2{ 
+    height: 85%;
+  
+    /* background-color: tomato; */
+ }
+
+ .row-2 .col-lg-6 section{
+  background-color: #ffce0c5d ;
+ }
+
+ .food-menu-img{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .food-menu-img img{
+  height: 50%;
+  width: 80%;
+ }
+ 
+ .food-menu-desc button{
+  width: 7rem;
+ }
+
+
+/* explore-food ends-------------------------------- */
+
+/* social-media starts  ---------------------------- */
+
+.social-media{
+  background-color:#000000 ;
+  height: 30vh;
+  overflow-x: hidden;
+}
+
+.social-media .container .row .col-lg-6 img{
+  height: 50px;
+}
+
+/* social-media ends  ------------------------------ */
+
+
+/* footer starts------------------------------------ */
+
+.footer{
+  background-color:#000000 ;
+  height: 10vh;
+  overflow-x: hidden;
+}
+
+/* footer ends-------------------------------------- */
