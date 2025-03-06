@@ -29,7 +29,7 @@ a{
 
 .hero{   
   
-  height: 60vh;
+  height: 70vh;
 
 }
 
@@ -76,8 +76,15 @@ a{
 /* categories starts---------------------------------- */
 
 .categories{
-  height: 150vh;
+  height: 120vh;
   overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+@media(max-width:992px){
+  .categories{
+    height: 150vh;
+  }
 }
 
 @media(min-width:992px){
@@ -92,7 +99,6 @@ a{
 }
 
 .categories .container .row-1{
-  height: 15%;
 
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
@@ -152,7 +158,7 @@ a{
   /* background-color: aqua; */
   height: fit-content;
   overflow-x: hidden;
-  background-color: #dfe4eab8;
+  background-color: #dfe4ea;
 }
 
 
@@ -181,7 +187,7 @@ a{
  }
 
  .row-2 .col-lg-6 section{
-  background-color: rgba(112, 128, 144, 0.331);
+  background-color: rgba(0, 30, 59, 0.292);
  }
 
  .food-menu-section{
