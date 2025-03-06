@@ -1,6 +1,6 @@
 /* general styles */
 body{
-  background-color: #ffce0c5d;
+  background-color: #ffce0c22;
   height: 100vh;
   overflow-x: hidden;
 
@@ -9,6 +9,7 @@ body{
 
 a{
   text-decoration: none;
+  color: #000000;
 }
 
 
@@ -34,7 +35,7 @@ a{
 
 .hero-container{
   height: 100%;
-  background-image: linear-gradient(rgba(255, 208, 0, 0.092),rgba(255, 247, 0, 0.111),rgba(255, 247, 0, 0.116)),url(Resources/AIEASE_2025-03-05-16-45-42-694.jpeg.jpg);
+  background-image: linear-gradient(rgba(0, 208, 255, 0.092),rgba(1, 95, 162, 0.111),rgba(53, 177, 249, 0.116)),url(Resources/AIEASE_2025-03-05-16-45-42-694.jpeg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
@@ -64,7 +65,7 @@ a{
 .hero-form input[type="submit"]{
   border: none;
   height: 40px;
-  width: 20%;
+  width: 5rem;
   border-radius: 0 5rem 5rem 0;
   color: white;
   background-color: rgb(205, 50, 50);
@@ -75,8 +76,15 @@ a{
 /* categories starts---------------------------------- */
 
 .categories{
-  height: 100vh;
+  height: 150vh;
   overflow-x: hidden;
+}
+
+@media(min-width:992px){
+  .categories{
+    height: 100vh;
+    
+  }
 }
 
 .categories .container{
@@ -99,7 +107,7 @@ a{
 }
 
 .categories .container .row-2 .item-1 section{
-  background: url(Resources/burger.jpg);
+  background: linear-gradient(rgba(0, 208, 255, 0.092),rgba(1, 95, 162, 0.111),rgba(53, 177, 249, 0.116)),url(Resources/burger.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -120,14 +128,14 @@ a{
  }
 
 .categories .container .row-2 .item-2 section{
-  background: url(Resources/pizza.jpg);
+  background: linear-gradient(rgba(0, 208, 255, 0.092),rgba(1, 95, 162, 0.111),rgba(53, 177, 249, 0.116)), url(Resources/pizza.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .categories .container .row-2 .item-3 section{
-  background: url(Resources/momo.jpg);
+  background: linear-gradient(rgba(0, 208, 255, 0.092),rgba(1, 95, 162, 0.111),rgba(53, 177, 249, 0.116)), url(Resources/momo.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -144,8 +152,7 @@ a{
   /* background-color: aqua; */
   height: fit-content;
   overflow-x: hidden;
-
-  background-color: #eff3ff81;
+  background-color: #dfe4eab8;
 }
 
 
@@ -174,7 +181,11 @@ a{
  }
 
  .row-2 .col-lg-6 section{
-  background-color: #ffce0c5d ;
+  background-color: rgba(112, 128, 144, 0.331);
+ }
+
+ .food-menu-section{
+  border: 1px solid rgba(0, 0, 0, 0.078);
  }
 
  .food-menu-img{
@@ -182,6 +193,8 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
+
+  
  }
 
  .food-menu-img img{
