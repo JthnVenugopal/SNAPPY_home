@@ -76,24 +76,16 @@ a{
 /* categories starts---------------------------------- */
 
 .categories{
-  height: 120vh;
+  height: 100vh;
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
 @media(max-width:992px){
   .categories{
-    height: 150vh;
+    height: 120vh;
   }
 }
-
-@media(min-width:992px){
-  .categories{
-    height: 100vh;
-    
-  }
-}
-
 .categories .container{
   height: 100%;
 }
@@ -151,7 +143,6 @@ a{
 /* categories ends---------------------------------- */
 
 
-
 /* explore-food starts------------------------------ */
 
 .explore-food{
@@ -187,7 +178,7 @@ a{
  }
 
  .row-2 .col-lg-6 section{
-  background-color: rgba(0, 30, 59, 0.292);
+  background-color: rgba(83, 173, 209, 0.292);
  }
 
  .food-menu-section{
@@ -200,7 +191,6 @@ a{
   justify-content: center;
   align-items: center;
 
-  
  }
 
  .food-menu-img img{
@@ -214,6 +204,55 @@ a{
 
 
 /* explore-food ends-------------------------------- */
+
+
+/* customer-comments starts-------------------------*/
+
+.client{
+  height: 60vh;
+}
+
+@media(max-width:767px){
+  .client{
+    height: fit-content;
+  }
+}
+
+.customer-comments{
+
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: normal;
+  /* background-color: yellow; */
+  text-shadow: 1px 1px 1px rgb(39, 23, 23);
+
+}
+
+.client .container .row-2{
+  
+}
+
+.client .container .row-2 .col-md-4 section{
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+
+.client .container .row-2 .col-md-4 section img{
+  height: 10rem
+}
+
+
+
+/* customer-comments ends---------------------------*/
+
 
 /* social-media starts  ---------------------------- */
 
@@ -234,7 +273,7 @@ a{
 
 .footer{
   background-color:#000000 ;
-  height: 10vh;
+  height: 30vh;
   overflow-x: hidden;
 }
 
