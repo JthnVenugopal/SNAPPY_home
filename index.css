@@ -293,6 +293,18 @@ a{
     height: 2rem;
 
   }
+
+  .footer-content{
+    flex-direction: row
+    !important;
+
+    justify-content: space-between;
+    
+
+    gap: 15px;
+  }
+
+  
 }
 
 /* .footer .row-2 .col-md-3{
