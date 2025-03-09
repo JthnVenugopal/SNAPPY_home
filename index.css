@@ -2,7 +2,7 @@
 body{
   background-color: #ffce0c22;
   height: 100vh;
-  
+  scroll-behavior: smooth;
 
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.152);
 }
@@ -275,44 +275,28 @@ a{
 /* customer-comments ends---------------------------*/
 
 
-/* social-media starts  ---------------------------- */
+/* footer starts-------------------------------------------- */
+.footer {
 
-.social-media{
-  background-color:#000000 ;
-  height: 30vh;
-  overflow-x: hidden;
-}
-
-.social-media .container .row .col-lg-6 img{
-  height: 50px;
-}
-
-/* social-media ends  ------------------------------ */
-
-
-/* footer starts------------------------------------ */
-
-.footer{
-  background-color:#000000 ;
-  height: 60vh;
+  height: 80vh;
   overflow-x: hidden;
 
-  overflow-y: hidden;
 }
-
 
 @media(max-width:500px){
-  p , a{
-    font-size: 14px;
+  .footer{
+    height: fit-content;
+    font-size: 10px;
+  }
+
+  .follow img{
+    height: 2rem;
+
   }
 }
 
-/* footer ends-------------------------------------- */
+/* .footer .row-2 .col-md-3{
+  border: 1px solid rgb(255, 255, 255);
+} */
 
-/* copyright---------------------------------------- */
-
-.copyright{
-  background-color: #000000;
-}
-
-/* copyright---------------------------------------- */
+/* footer ends----------------------------------------------- */
