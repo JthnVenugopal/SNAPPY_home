@@ -2,9 +2,9 @@
 body{
   background-color: #ffce0c22;
   height: 100vh;
-  overflow-x: hidden;
+  
 
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.366);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.152);
 }
 
 a{
@@ -14,6 +14,11 @@ a{
 
 
 /* navbar starts ------------------------------------------*/
+
+.navbar {
+  z-index: 1000;
+}
+
 .logo h3{
   
   font-family: "Dancing Script", cursive;
@@ -29,7 +34,7 @@ a{
 
 .hero{   
   
-  height: 70vh;
+  height: 100vh;
 
 }
 
@@ -41,17 +46,13 @@ a{
   background-size:cover;
 }
 
-
-
 .hero-container h2{
-  
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
   font-weight: 1000;
   font-style: normal;
   
   text-shadow: 1px 1px 1px black;
-
 }
 
 .hero-form input[type="text"]{
@@ -71,19 +72,28 @@ a{
   background-color: rgb(205, 50, 50);
 }
 
+.book-table{
+  height: 40vh;
+
+}
+
+.book-table .col-lg-6{
+  border: 1px solid black;
+}
+
 /* hero ends */
 
 /* categories starts---------------------------------- */
 
 .categories{
-  height: 100vh;
+  height: 70vh;
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
 @media(max-width:992px){
   .categories{
-    height: 120vh;
+    height: 150vh;
   }
 }
 .categories .container{
@@ -92,16 +102,12 @@ a{
 
 .categories .container .row-1{
 
-  font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
-  font-weight: 1000;
   font-style: normal;
-  
-  text-shadow: 1px 1px 1px rgb(39, 23, 23);
 }
 
 .categories .container .row-2{
-  height: 75%;
+  height: 65%;
 }
 
 .categories .container .row-2 .item-1 section{
@@ -139,6 +145,21 @@ a{
   background-size: cover;
 }
 
+.categories .container .row-2 .item-1 section:hover {
+  transform: scale3d(1.05, 1.05, 1.01); 
+}
+
+.categories .container .row-2 .item-2 section:hover {
+  transform: scale3d(1.05, 1.05, 1.01);
+}
+
+.categories .container .row-2 .item-3 section:hover {
+  transform: scale3d(1.05, 1.05, 1.01); 
+}
+
+
+
+
 
 /* categories ends---------------------------------- */
 
@@ -149,7 +170,7 @@ a{
   /* background-color: aqua; */
   height: fit-content;
   overflow-x: hidden;
-  background-color: #dfe4ea;
+  background-color: #ed4c671d;
 }
 
 
@@ -162,12 +183,10 @@ a{
 
   height: 15%;
 
-  font-family: "Dancing Script", cursive;
+
   font-optical-sizing: auto;
-  font-weight: 1000;
   font-style: normal;
   /* background-color: yellow; */
-  text-shadow: 1px 1px 1px rgb(39, 23, 23);
     
 }
 
@@ -178,12 +197,19 @@ a{
  }
 
  .row-2 .col-lg-6 section{
-  background-color: rgba(83, 173, 209, 0.292);
+  /* background-color: #a7781228; */
+  border-radius: 1rem;
+  margin: 2% 0;
+  border: 1px solid rgba(0, 0, 0, 0.083);
  }
 
- .food-menu-section{
-  border: 1px solid rgba(0, 0, 0, 0.078);
+ .row-2 .col-lg-6 section:hover{
+  transform: scale3d(1.02,1.02,1.1);
  }
+
+ /* .food-menu-section{
+  border: 1px solid rgba(0, 0, 0, 0.193);
+ } */
 
  .food-menu-img{
   width: 40%;
@@ -220,18 +246,12 @@ a{
 
 .customer-comments{
 
-  font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
-  font-weight: 1000;
   font-style: normal;
-  /* background-color: yellow; */
-  text-shadow: 1px 1px 1px rgb(39, 23, 23);
 
 }
 
-.client .container .row-2{
-  
-}
+
 
 .client .container .row-2 .col-md-4 section{
   background-color: rgb(255, 255, 255);
@@ -241,6 +261,7 @@ a{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 
 }
 
@@ -277,6 +298,13 @@ a{
   overflow-x: hidden;
 
   overflow-y: hidden;
+}
+
+
+@media(max-width:500px){
+  p , a{
+    font-size: 14px;
+  }
 }
 
 /* footer ends-------------------------------------- */
