@@ -79,7 +79,8 @@ a{
 }
 
 .book-table-blk{
-   background-color: rgba(110, 146, 246, 0.148);
+   background-color: rgba(0, 0, 0, 0.34);
+   padding: 10%;
 }
 
 .book-table .col-lg-6{
@@ -107,9 +108,17 @@ a{
   overflow-y: hidden;
 }
 
-@media(max-width:992px){
+.category-section{
+  height: 100%;
+}
+
+@media(max-width:500px){
   .categories{
-    height: 150vh;
+    height:100vh;
+  }
+
+  .category-section{
+  /* height: 20vh; */
   }
 }
 .categories .container{
@@ -222,20 +231,36 @@ a{
 
  /* .food-menu-section{
   border: 1px solid rgba(0, 0, 0, 0.193);
+  background-color: aqua;
  } */
 
  .food-menu-img{
-  width: 40%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: aqua; */
+
+  
 
  }
 
  .food-menu-img img{
-  height: 50%;
-  width: 80%;
+  height: 100%;
+  width: 100%;
+ 
  }
+
+ .food-menu-img-left img{
+  border-radius: 1rem 0 0 1rem;
+ }
+
+
+ .food-menu-img-right img{
+  border-radius: 1rem 0 0 1rem;
+ }
+
+
  
  .food-menu-desc button{
   width: 7rem;
@@ -293,6 +318,10 @@ a{
   height: 80vh;
   overflow-x: hidden;
 
+}
+
+.follow-img{
+  height: 3rem;
 }
 
 @media(max-width:500px){
