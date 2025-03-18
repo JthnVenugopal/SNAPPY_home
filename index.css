@@ -92,11 +92,20 @@ a{
   width: 50%;
 }
 
+.notify-icon{
+  background-color: rgb(38, 255, 0);
+  height: 1rem;
+  width: 1rem;
+  border-radius: 0.5rem;
+}
+
 @media(max-width:500px){
   .reservation-form input{
     width: 90%;
   }
 }
+
+
 
 /* hero ends */
 
@@ -240,13 +249,13 @@ a{
   justify-content: center;
   align-items: center;
   /* background-color: aqua; */
-
+  height: fit-content;
   
 
  }
 
  .food-menu-img img{
-  height: 100%;
+  height: 15rem;
   width: 100%;
  
  }
@@ -266,14 +275,44 @@ a{
   width: 7rem;
  }
 
+ @media(max-width:500px){
+  .food-menu-section{
+    height:15rem;
+    
+  }
+
+}
+
 
 /* explore-food ends-------------------------------- */
 
 
-/* customer-comments starts-------------------------*/
+/* banner-section starts---------------------------- */
+
+.banner-section{
+  height: 80vh;
+  background: url(Resources/snappy_banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media(max-width:500px){
+  .banner-section{
+    background-size: cover;
+    height: 30vh;
+    padding: 1% 0;
+  }
+}
+
+
+/* banner-section ends------------------------------ */
+
+
+/* customer-comments starts---------------------------*/
 
 .client{
-  height: 70vh;
+  height: 90vh;
 }
 
 @media(max-width:767px){
@@ -308,9 +347,18 @@ a{
   height: 10rem
 }
 
+.star-rating{
+  cursor: pointer;
+}
 
-/* customer-comments ends---------------------------*/
 
+/* customer-comments ends--------------------------*/
+
+/* about-us, visions starts----------------------- */
+.about-us-vision-section{
+  height: 150vh;
+}
+/* about-us, visions ends------------------------- */
 
 /* footer starts-------------------------------------------- */
 .footer {
