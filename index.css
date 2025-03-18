@@ -172,7 +172,7 @@
     font-weight: 1000;
     font-style: normal;
     
-    text-shadow: 1px 1px 1px rgba(245, 7, 7, 0.187);
+   
 }
 
 .about-us-img{
@@ -185,6 +185,7 @@
 
 .about-us-para{
   font-size: 22px;
+  opacity: 0.9;
 }
 
 @media(max-width:500px){
@@ -217,7 +218,7 @@
   font-weight: 1000;
   font-style: normal;
   
-  text-shadow: 1px 1px 1px rgba(245, 7, 7, 0.187);
+  
 }
 
 .vision-img{
@@ -230,6 +231,7 @@
 
 .vision-para{
   font-size: 22px;
+  opacity: 0.9;
 }
 
 @media(max-width:500px){
