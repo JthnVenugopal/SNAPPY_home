@@ -24,7 +24,7 @@
   </head>
   <body>
 
-    <!-- navbar ----------------------------->
+    <!-- navbar starts--------------------------->
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid">
 
@@ -33,9 +33,12 @@
           <!-- logo -->
           <div class="logo d-flex justify-content-center gap-1 mx-3 p-2">
 
-            <img src="Resources/snappy logo.png" alt="" height="55px" >
+            <a href="http://127.0.0.1:5500/HOME/index.html"><img src="Resources/snappy logo.png" alt="" height="55px" ></a>
 
-            <h3 class=" mt-3">Snappy</h3>
+            <a href="http://127.0.0.1:5500/HOME/index.html"><h3 class=" mt-3">Snappy</h3></a>
+
+
+            
           </div >
           
        </a>
@@ -69,8 +72,9 @@
         </div>
       </div>
     </nav>
+    <!-- navbar ends----------------------------->
 
-     <!-- hero -------------------------------------------->
+     <!-- hero starts---------------------------->
      <div class="hero ">
       <div class=" hero-container container-fluid d-flex flex-column align-content-center justify-content-center ">
 
@@ -84,6 +88,7 @@
 
                   <h4 class="display-6 text-light text-center mb-4">Make a Reservation</h4>
                   
+                  <!-- form starts -->
                   <form action="" method="" class=" reservation-form d-flex flex-column align-items-center" >
                   
                         <input type="date" class="form-control">
@@ -93,7 +98,23 @@
                         <input type="number" placeholder="Enter number of persons" class="form-control">
                         <br>
                         <button class="btn btn-primary mb-4">Submit</button>
+
+                        <!-- Reservation availability starts -->
+
+                                <div class="reservation-availabilty d-flex justify-content-center w-100">
+                                  
+                                    <div class="notify-icon mt-1">
+                                      .
+                                    </div>
+
+                                    <h6 class="px-3 text-white ">Reservation Available</h6>
+
+                                </div>
+
+                        <!-- Reservation availabilty ends--- -->
+
                   </form>
+                  <!-- form ends-- -->
 
                 </div>
 
@@ -101,22 +122,25 @@
 
               <!-- book-table-section ends-->
 
+
+              <!-- food-search btn starts -->
               <div class=" d-flex justify-content-center mt-4">
                 <div class="col-md-6  d-flex justify-content-around">
                   <form action="" class="hero-form d-flex justify-content-center w-100 " >
                     <input type="text" placeholder="Search food...." class="mx-3 text-center ">
-
-                   
-
                     <input type="submit"value="Search" class="text-center " >
                   </form>
                 </div>
               </div>
+              <!-- food-search btn ends -->
+
+
 
       </div>
      </div>
+     <!-- hero ends------------------------------>
 
-    <!-- categories - main  ------------------------------->
+    <!-- categories - main  starts--------------->
     <div class="categories my-1">
 
       <div class="container gy-3">
@@ -157,8 +181,9 @@
       </div>
 
     </div>
+    <!-- categories - main  ends----------------->
 
-    <!-- explore foods | food menu  ----------------------->
+    <!-- explore foods | food menu starts-------->
     <div class="explore-food ">
 
     <div class="container">
@@ -169,12 +194,13 @@
 
         <div class="row-2 row">
           
+          <!-- 1st -->
           <div class="col-lg-6 p-2 ">
 
-            <section class="shadow-lg h-100 food-menu-section d-flex ">
+            <section class="shadow-lg food-menu-section d-flex ">
 
               <div class="food-menu-img food-menu-img-left">
-                <img src="Resources/menu-burger.jpg" alt="" class="">
+                <img src="Resources/menu-burger.jpg" alt="" class="foods-img">
               </div>
 
               <div class="food-menu-desc w-100 d-flex flex-column justify-content-center align-items-center">
@@ -192,22 +218,24 @@
             </section>
 
           </div>
+          <!--/ 1st -->
 
+          <!-- 2nd -->
           <div class="col-lg-6 p-2 ">
 
-            <section class="shadow-lg h-100 food-menu-section d-flex ">
+            <section class="shadow-lg food-menu-section d-flex ">
 
               <div class="food-menu-img food-menu-img-left">
-                <img src="Resources/menu-burger.jpg" alt="" class="">
+                <img src="Resources/menu-momo.jpg" alt="menu-pizza" class="foods-img">
               </div>
 
               <div class="food-menu-desc w-100 d-flex flex-column justify-content-center align-items-center">
 
-                  <h4 class="lead text-center mt-3">Burger</h4>
+                  <h4 class="lead text-center mt-3">Momos</h4>
 
-                  <p class="lead text-center fw-bold">₹229</p>
+                  <p class="lead text-center fw-bold">₹189</p>
 
-                  <p class="text-center text-muted  mx-2">Made with italian sauce, and organic vegetables</p>
+                  <p class="text-center text-muted  mx-2">Delicious momos filled with a savory blend of organic vegetables, seasoned to perfection and steamed </p>
 
                   <button class="btn btn-danger mb-3">Order Now</button>
 
@@ -216,22 +244,24 @@
             </section>
 
           </div>
+          <!--/ 2nd -->
 
+          <!-- 3rd -->
           <div class="col-lg-6 p-2 ">
 
-            <section class="shadow-lg h-100 food-menu-section d-flex ">
+            <section class="shadow-lg food-menu-section d-flex ">
 
               <div class="food-menu-img food-menu-img-left">
-                <img src="Resources/menu-burger.jpg" alt="" class="">
+                <img src="Resources/menu-pizza.jpg" alt="" class="foods-img">
               </div>
 
               <div class="food-menu-desc w-100 d-flex flex-column justify-content-center align-items-center">
 
-                  <h4 class="lead text-center mt-3">Burger</h4>
+                  <h4 class="lead text-center mt-3">Pizza</h4>
 
-                  <p class="lead text-center fw-bold">₹229</p>
+                  <p class="lead text-center fw-bold">₹359</p>
 
-                  <p class="text-center text-muted  mx-2">Made with italian sauce, and organic vegetables</p>
+                  <p class="text-center text-muted  mx-2">Savor the ultimate comfort food with our classic pizza!</p>
 
                   <button class="btn btn-danger mb-3">Order Now</button>
 
@@ -240,22 +270,24 @@
             </section>
 
           </div>
+          <!--/ 3rd -->
 
+          <!-- 4th -->
           <div class="col-lg-6 p-2 ">
 
-            <section class="shadow-lg h-100 food-menu-section d-flex ">
+            <section class="shadow-lg food-menu-section d-flex ">
 
               <div class="food-menu-img food-menu-img-left">
-                <img src="Resources/menu-burger.jpg" alt="" class="">
+                <img src="Resources/noodles.jpg" alt="" class="foods-img">
               </div>
 
               <div class="food-menu-desc w-100 d-flex flex-column justify-content-center align-items-center">
 
-                  <h4 class="lead text-center mt-3">Burger</h4>
+                  <h4 class="lead text-center mt-3">Noodles</h4>
 
-                  <p class="lead text-center fw-bold">₹229</p>
+                  <p class="lead text-center fw-bold">₹179</p>
 
-                  <p class="text-center text-muted  mx-2">Made with italian sauce, and organic vegetables</p>
+                  <p class="text-center text-muted  mx-2">Indulge in a bowl of perfectly cooked noodles, tossed in a flavorful blend of spices</p>
 
                   <button class="btn btn-danger mb-3">Order Now</button>
 
@@ -264,22 +296,24 @@
             </section>
 
           </div>
+          <!--/ 4th -->
 
+          <!-- 5th -->
           <div class="col-lg-6 p-2 ">
 
-            <section class="shadow-lg h-100 food-menu-section d-flex ">
+            <section class="shadow-lg food-menu-section d-flex ">
 
               <div class="food-menu-img food-menu-img-left">
-                <img src="Resources/menu-burger.jpg" alt="" class="">
+                <img src="Resources/mojito.jpg" alt="" class="foods-img">
               </div>
 
               <div class="food-menu-desc w-100 d-flex flex-column justify-content-center align-items-center">
 
-                  <h4 class="lead text-center mt-3">Burger</h4>
+                  <h4 class="lead text-center mt-3">Mojito</h4>
 
-                  <p class="lead text-center fw-bold">₹229</p>
+                  <p class="lead text-center fw-bold">₹99</p>
 
-                  <p class="text-center text-muted  mx-2">Made with italian sauce, and organic vegetables</p>
+                  <p class="text-center text-muted  mx-2">Refresh your senses with our classic mojito, a perfect blend of zesty lime, fresh mint leaves</p>
 
                   <button class="btn btn-danger mb-3">Order Now</button>
 
@@ -288,22 +322,24 @@
             </section>
 
           </div>
+          <!-- 5th -->
 
+          <!-- 6th -->
           <div class="col-lg-6 p-2 ">
 
-            <section class="shadow-lg h-100 food-menu-section d-flex ">
+            <section class="shadow-lg  food-menu-section d-flex ">
 
               <div class="food-menu-img food-menu-img-left">
-                <img src="Resources/menu-burger.jpg" alt="" class="">
+                <img src="Resources/pasta.jpg" alt="" class="foods-img">
               </div>
 
               <div class="food-menu-desc w-100 d-flex flex-column justify-content-center align-items-center">
 
-                  <h4 class="lead text-center mt-3">Burger</h4>
+                  <h4 class="lead text-center mt-3">Pasta</h4>
 
                   <p class="lead text-center fw-bold">₹229</p>
 
-                  <p class="text-center text-muted  mx-2">Made with italian sauce, and organic vegetables</p>
+                  <p class="text-center text-muted  mx-2">Al dente pasta coated in a rich, creamy Alfredo sauce, topped with fresh herbs and a sprinkle of Parmesan</p>
 
                   <button class="btn btn-danger mb-3">Order Now</button>
 
@@ -312,6 +348,7 @@
             </section>
 
           </div>
+          <!-- 6th -->
 
      
 
@@ -322,8 +359,15 @@
     </div>
 
     </div>
+    <!-- explore foods | food menu ends---------->
 
-     <!-- client------------------------------------------->
+    <!-- banner starts------------------------ -->
+     <div class="banner-section">
+      
+     </div>
+    <!-- banner ends-------------------------- -->
+
+    <!-- client starts--------------------------->
     <div class="client mb-5 ">
       <div class="container h-100 ">  
 
@@ -337,11 +381,11 @@
                         
                         <section class="rounded shadow-lg">
                           
-                          <img src="Resources/Jane smith.jpg" alt="" class="rounded">
+                          <img src="Resources/Person/jane-person-removebg-preview.png" alt="" class="rounded my-2">
 
                           <h6 class="display-6">Jane</h6>
 
-                          <p class="p-2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquid.</p>
+                          <p class="p-2 text-center">"Absolutely loved my experience at Snappy Restaurant! The food was fresh, flavorful, and came out quickly. The staff was super friendly and attentive. I highly recommend the avocado toast—it was divine!"</p>
 
                                   <div class="star-rating">
                                         <span onclick="gfg(1)"
@@ -373,11 +417,11 @@
                         
                         <section class="rounded shadow-lg">
                           
-                          <img src="Resources/john doe.jpg" alt="" class="rounded">
+                          <img src="Resources/Person/Jacob-person.png" alt="" class="rounded">
 
                           <h6 class="display-6">John</h6>
 
-                          <p class="p-2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquid.</p>
+                          <p class="p-2 text-center">"Absolutely loved my experience at Snappy Restaurant! The food was fresh, flavorful, and came out quickly. The staff was super friendly and attentive. I highly recommend the avocado toast—it was divine!"</p>
 
                           <div class="star-rating">
                             <span onclick="gfg(1)"
@@ -409,11 +453,11 @@
                         
                         <section class="rounded shadow-lg ">
                           
-                          <img src="Resources/Mike Johnson.jpg" alt="" class="rounded">
+                          <img src="Resources/Person/mike-person-removebg-preview.png" alt="" class="rounded">
 
                           <h6 class="display-6">Mike</h6>
 
-                          <p class="p-2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquid.</p>
+                          <p class="p-2 text-center">"Solid spot for a quick meal! The food was tasty, and the service was fast. I had the BBQ burger, and it was juicy and flavorful. The only downside was that the place was a bit noisy. Still, I’d recommend it!"</p>
 
                           <div class="star-rating">
                             <span onclick="gfg(1)"
@@ -441,15 +485,30 @@
 
                       </div>
 
-          </div>
+         
+                </div>
 
 
           
         </div>
     </div>
+    <!-- client ends----------------------------->
 
-<!-- footer-starts---------------------------------- -->
+    <!-- about-us, visions starts------------- -->
 
+    <!-- about-us, visions ends--------------- -->
+    <div class="about-us-vision-section bg-info">
+
+         <div class="about-us-section">
+          .
+         </div>
+
+         <div class="vision-section">
+          .
+         </div>
+      
+    </div>
+    <!-- footer starts------------------------ -->
     <footer class="footer bg-dark ">
 
       <div class="row row-1 h-25">
@@ -521,25 +580,20 @@
       </div>
 
     </footer>
+    <!-- footer ends-------------------------- -->
 
-<!-- footer-ends------------------------------------ -->
-
-
-  
 <!-- end -->
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
-    <script>// script.js
 
-      // To access the stars
+    <!-- script for rating star -->
+    <!-- <script>// script.js
       let stars = 
         document.getElementsByClassName("star");
       let output = 
         document.getElementById("output");
-      
-      // Funtion to update rating
       function gfg(n) {
         remove();
         for (let i = 0; i < n; i++) {
@@ -552,8 +606,6 @@
         }
         output.innerText = "Rating is: " + n + "/5";
       }
-      
-      // To remove the pre-applied styling
       function remove() {
         let i = 0;
         while (i < 5) {
@@ -561,7 +613,7 @@
           i++;
         }
       }
-      </script>
+    </script> -->
 
   </body>
 </html>
