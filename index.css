@@ -1,403 +1,684 @@
-/* general styles */
-body{
-  background-color: #ffce0c22;
-  height: 100vh;
-  scroll-behavior: smooth;
-
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.152);
-}
-
-a{
-  text-decoration: none;
-  color: #000000;
-}
-
-
-/* navbar starts ------------------------------------------*/
-
-.navbar {
-  z-index: 1000;
-}
-
-.logo h3{
-  
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 1000;
-  font-style: normal;
-
-}
-
-/* navbar ends */
-
-/* hero starts --------------------------------------------*/
-
-.hero{   
-  
-  height: 100vh;
-
-}
-
-.hero-container{
-  height: 100%;
-  background-image: linear-gradient(rgba(0, 208, 255, 0.092),rgba(1, 95, 162, 0.111),rgba(53, 177, 249, 0.116)),url(Resources/AIEASE_2025-03-05-16-45-42-694.jpeg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:cover;
-}
-
-.hero-container h2{
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 1000;
-  font-style: normal;
-  
-  text-shadow: 1px 1px 1px black;
-}
-
-.hero-form input[type="text"]{
-  border: none;
-  height: 40px;
-  width: 50%;
-  border-radius: 5rem 0 0 5rem;
-  outline: none;
-}
-
-.hero-form input[type="submit"]{
-  border: none;
-  height: 40px;
-  width: 5rem;
-  border-radius: 0 5rem 5rem 0;
-  color: white;
-  background-color: rgb(205, 50, 50);
-}
-
-.book-table{
-  height:fit-content;
-  width: 100%;
-  
-}
-
-.book-table-blk{
-   background-color: rgba(0, 0, 0, 0.34);
-   padding: 10%;
-}
-
-.book-table .col-lg-6{
-  border: 1px solid rgba(255, 255, 255, 0.196);
-  
-}
-
-.reservation-form input{
-  width: 50%;
-}
-
-.notify-icon{
-  background-color: rgb(38, 255, 0);
-  height: 1rem;
-  width: 1rem;
-  border-radius: 0.5rem;
-}
-
-@media(max-width:500px){
-  .reservation-form input{
-    width: 90%;
-  }
-}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SNAPPY | HOME</title>
+
+    <!-- bootstrap cdn -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+
+    <!-- bootstrap-download -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- custom-css -->
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="icon" href="Resources/snappy logo.png" type="image/x-icon">
+
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+IT+Moderna:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
 
+    <!-- navbar starts--------------------------->
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="http://127.0.0.1:5500/HOME/home.html">
+          
+          <!-- logo -->
+          <div class="logo d-flex justify-content-center gap-1 mx-3 p-2">
+
+            <a href="http://127.0.0.1:5500/HOME/index.html"><img src="Resources/snappy logo.png" alt="" height="55px" ></a>
+
+            <a href="http://127.0.0.1:5500/HOME/index.html"><h3 class=" mt-3">Snappy</h3></a>
 
 
-/* hero ends */
+            
+          </div >
+          
+       </a>
 
-/* categories starts---------------------------------- */
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
 
-.categories{
-  height: 70vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
 
-.category-section{
-  height: 100%;
-}
+          <ul class="navbar-nav ms-auto mt-3 gap-1">         
+            <li class="nav-item">
+              <a class="nav-link text-dark text-muted" aria-current="page" href="#"><p class=" ">Home</p></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark text-muted" aria-current="page" href="#"><p class="">Categories</p></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark text-muted" aria-current="page" href="#"><p class=" ">Foods</p></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark text-muted" aria-current="page" href="#"><p class="">Contact Us</p></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-danger mx-1 " aria-current="page" href="#"><p class="">Cart</p></a>
+            </li>
+            <li>
+              <a href="http://127.0.0.1:5500/LOGIN/login.html" class="btn btn-danger mt-1 border-0 ">Signout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar ends----------------------------->
+
+     <!-- hero starts---------------------------->
+     <div class="hero ">
+      <div class=" hero-container container-fluid d-flex flex-column align-content-center justify-content-center ">
+
+              <h2 class="display-1 text-white text-center">Food on wheels</h2>
+
+               <!-- book-table-section ------>
 
-@media(max-width:500px){
-  .categories{
-    height:100vh;
-  }
+               <section class="book-table   my-1 d-flex justify-content-center ">
 
-  .category-section{
-  /* height: 20vh; */
-  }
-}
-.categories .container{
-  height: 100%;
-}
+                <div class="col-lg-6 shadow-lg rounded p-3 book-table-blk">
 
-.categories .container .row-1{
+                  <h4 class="display-6 text-light text-center mb-4">Make a Reservation</h4>
+                  
+                  <!-- form starts -->
+                  <form action="" method="" class=" reservation-form d-flex flex-column align-items-center" >
+                  
+                        <input type="date" class="form-control">
+                        <br>
+                        <input type="time" class="form-control" placeholder="Enter time">
+                        <br>
+                        <input type="number" placeholder="Enter number of persons" class="form-control">
+                        <br>
+                        <button class="btn btn-primary mb-4">Submit</button>
 
-  font-optical-sizing: auto;
-  font-style: normal;
-}
+                        <!-- Reservation availability starts -->
 
-.categories .container .row-2{
-  height: 65%;
-}
+                                <div class="reservation-availabilty d-flex justify-content-center w-100">
+                                  
+                                    <div class="notify-icon mt-1">
+                                      .
+                                    </div>
 
-.categories .container .row-2 .item-1 section{
-  background: linear-gradient(rgba(0, 208, 255, 0.092),rgba(1, 95, 162, 0.111),rgba(53, 177, 249, 0.116)),url(Resources/burger.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+                                    <h6 class="px-3 text-white ">Reservation Available</h6>
 
-  
-}
+                                </div>
 
-.categories .container .row-2 .item-1 section h4{ 
-  text-shadow: 2px 2px 10px rgb(0, 0, 0);
- }
+                        <!-- Reservation availabilty ends--- -->
 
- .categories .container .row-2 .item-2 section h4{ 
-  text-shadow: 2px 2px 10px rgb(0, 0, 0);
- }
+                  </form>
+                  <!-- form ends-- -->
 
- .categories .container .row-2 .item-3 section h4{ 
-  text-shadow: 2px 2px 10px rgb(0, 0, 0);
- }
+                </div>
 
-.categories .container .row-2 .item-2 section{
-  background: linear-gradient(rgba(0, 208, 255, 0.092),rgba(1, 95, 162, 0.111),rgba(53, 177, 249, 0.116)), url(Resources/pizza.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
+              </section>
 
-.categories .container .row-2 .item-3 section{
-  background: linear-gradient(rgba(0, 208, 255, 0.092),rgba(1, 95, 162, 0.111),rgba(53, 177, 249, 0.116)), url(Resources/momo.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
+              <!-- book-table-section ends-->
 
-.categories .container .row-2 .item-1 section:hover {
-  transform: scale3d(1.05, 1.05, 1.01); 
-}
 
-.categories .container .row-2 .item-2 section:hover {
-  transform: scale3d(1.05, 1.05, 1.01);
-}
+              <!-- food-search btn starts -->
+              <div class=" d-flex justify-content-center mt-4">
+                <div class="col-md-6  d-flex justify-content-around">
+                  <form action="" class="hero-form d-flex justify-content-center w-100 " >
+                    <input type="text" placeholder="Search food...." class="mx-3 text-center ">
+                    <input type="submit"value="Search" class="text-center " >
+                  </form>
+                </div>
+              </div>
+              <!-- food-search btn ends -->
 
-.categories .container .row-2 .item-3 section:hover {
-  transform: scale3d(1.05, 1.05, 1.01); 
-}
 
 
-/* categories ends---------------------------------- */
+      </div>
+     </div>
+     <!-- hero ends------------------------------>
 
+    <!-- categories - main  starts--------------->
+    <div class="categories my-1">
 
-/* explore-food starts------------------------------ */
+      <div class="container gy-3">
 
-.explore-food{
-  /* background-color: aqua; */
-  height: fit-content;
-  overflow-x: hidden;
-  background-color: #ed4c671d;
-}
+            <div class="row row-1 d-flex align-items-center my-3">
+              <h2 class="text-center display-6 text-muted">Popular items</h2>
+            </div>
 
+            <div class="row row-2 h-100">
+              
+                  <div class="col-lg-4 p-2 item-1">
+                    <section class="category-section bg-info h-100 rounded d-flex flex-column justify-content-end">
+                       <h4 class="text-center display-6 text-white fw-bolder mb-5">Burger</h4>
+                    </section>
+                  </div>
 
-.explore-food .container{
-  /* background-color: brown; */
-  height: 100%;
-}
+                  <div class="col-lg-4 p-2 item-2">
+                    <section class="category-section bg-info h-100 rounded d-flex flex-column justify-content-end">
+                       <h4 class="text-center display-6 text-white fw-bolder mb-5">Pizza</h4>
+                    </section>
+                  </div>
 
-.explore-food .container .row-1{
+                  <div class="col-lg-4 p-2 item-3">
+                    <section class="category-section bg-info h-100 rounded d-flex flex-column justify-content-end">
+                       <h4 class="text-center display-6 text-white fw-bolder mb-5">Momos</h4>
+                    </section>
+                  </div>
 
-  height: 15%;
+                  
+                      <div class="d-flex justify-content-center">
+                        <a href="http://127.0.0.1:5500/CATEGORIES/index.html" class="btn mb-1 text-danger">More categories</a>
+                      </div>
+                  
 
+            </div>
 
-  font-optical-sizing: auto;
-  font-style: normal;
-  /* background-color: yellow; */
-    
-}
 
-.explore-food .container .row-2{ 
-    height: 85%;
-  
-    /* background-color: tomato; */
- }
+      </div>
 
- .row-2 .col-lg-6 section{
-  /* background-color: #a7781228; */
-  border-radius: 1rem;
-  margin: 2% 0;
-  border: 1px solid rgba(0, 0, 0, 0.083);
- }
+    </div>
+    <!-- categories - main  ends----------------->
 
- .row-2 .col-lg-6 section:hover{
-  transform: scale3d(1.02,1.02,1.1);
- }
+    <!-- explore foods | food menu starts-------->
+    <div class="explore-food ">
 
- /* .food-menu-section{
-  border: 1px solid rgba(0, 0, 0, 0.193);
-  background-color: aqua;
- } */
+    <div class="container">
 
- .food-menu-img{
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background-color: aqua; */
-  height: fit-content;
-  
+        <div class="row-1 row d-flex align-items-center my-2">
+          <h2 class="text-center display-6 my-4 text-muted">Explore foods</h2>
+        </div>
 
- }
+        <div class="row-2 row">
+          
+          <!-- 1st -->
+          <div class="col-lg-6 p-2 ">
 
- .food-menu-img img{
-  height: 15rem;
-  width: 100%;
- 
- }
+            <section class="shadow-lg food-menu-section d-flex ">
 
- .food-menu-img-left img{
-  border-radius: 1rem 0 0 1rem;
- }
+              <div class="food-menu-img food-menu-img-left">
+                <img src="Resources/menu-burger.jpg" alt="" class="foods-img">
+              </div>
 
+              <div class="food-menu-desc w-100 d-flex flex-column justify-content-center align-items-center">
 
- .food-menu-img-right img{
-  border-radius: 1rem 0 0 1rem;
- }
+                  <h4 class="lead text-center mt-3">Burger</h4>
 
+                  <p class="lead text-center fw-bold">₹229</p>
 
- 
- .food-menu-desc button{
-  width: 7rem;
- }
+                  <p class="text-center text-muted  mx-2">Made with italian sauce, and organic vegetables</p>
 
- @media(max-width:500px){
-  .food-menu-section{
-    height:15rem;
-    
-  }
+                  <button class="btn btn-danger mb-3">Order Now</button>
 
-}
+              </div>
 
+            </section>
 
-/* explore-food ends-------------------------------- */
+          </div>
+          <!--/ 1st -->
 
+          <!-- 2nd -->
+          <div class="col-lg-6 p-2 ">
 
-/* banner-section starts---------------------------- */
+            <section class="shadow-lg food-menu-section d-flex ">
 
-.banner-section{
-  height: 80vh;
-  background: url(Resources/snappy_banner.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+              <div class="food-menu-img food-menu-img-left">
+                <img src="Resources/menu-momo.jpg" alt="menu-pizza" class="foods-img">
+              </div>
 
-@media(max-width:500px){
-  .banner-section{
-    background-size: cover;
-    height: 30vh;
-    padding: 1% 0;
-  }
-}
+              <div class="food-menu-desc w-100 d-flex flex-column justify-content-center align-items-center">
 
+                  <h4 class="lead text-center mt-3">Momos</h4>
 
-/* banner-section ends------------------------------ */
+                  <p class="lead text-center fw-bold">₹189</p>
 
+                  <p class="text-center text-muted  mx-2">Delicious momos filled with a savory blend of organic vegetables, seasoned to perfection and steamed </p>
 
-/* customer-comments starts---------------------------*/
+                  <button class="btn btn-danger mb-3">Order Now</button>
 
-.client{
-  height: 90vh;
-}
+              </div>
 
-@media(max-width:767px){
-  .client{
-    height: fit-content;
-  }
-}
+            </section>
 
-.customer-comments{
+          </div>
+          <!--/ 2nd -->
 
-  font-optical-sizing: auto;
-  font-style: normal;
+          <!-- 3rd -->
+          <div class="col-lg-6 p-2 ">
 
-}
+            <section class="shadow-lg food-menu-section d-flex ">
 
+              <div class="food-menu-img food-menu-img-left">
+                <img src="Resources/menu-pizza.jpg" alt="" class="foods-img">
+              </div>
 
+              <div class="food-menu-desc w-100 d-flex flex-column justify-content-center align-items-center">
 
-.client .container .row-2 .col-md-4 section{
-  background-color: rgb(255, 255, 255);
-  height: 100%;
+                  <h4 class="lead text-center mt-3">Pizza</h4>
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+                  <p class="lead text-center fw-bold">₹359</p>
 
+                  <p class="text-center text-muted  mx-2">Savor the ultimate comfort food with our classic pizza!</p>
 
-}
+                  <button class="btn btn-danger mb-3">Order Now</button>
 
+              </div>
 
-.client .container .row-2 .col-md-4 section img{
-  height: 10rem
-}
+            </section>
 
-.star-rating{
-  cursor: pointer;
-}
+          </div>
+          <!--/ 3rd -->
 
+          <!-- 4th -->
+          <div class="col-lg-6 p-2 ">
 
-/* customer-comments ends--------------------------*/
+            <section class="shadow-lg food-menu-section d-flex ">
 
-/* about-us, visions starts----------------------- */
-.about-us-vision-section{
-  height: 150vh;
-}
-/* about-us, visions ends------------------------- */
+              <div class="food-menu-img food-menu-img-left">
+                <img src="Resources/noodles.jpg" alt="" class="foods-img">
+              </div>
 
-/* footer starts-------------------------------------------- */
-.footer {
+              <div class="food-menu-desc w-100 d-flex flex-column justify-content-center align-items-center">
 
-  height: 80vh;
-  overflow-x: hidden;
+                  <h4 class="lead text-center mt-3">Noodles</h4>
 
-}
+                  <p class="lead text-center fw-bold">₹179</p>
 
-.follow-img{
-  height: 3rem;
-}
+                  <p class="text-center text-muted  mx-2">Indulge in a bowl of perfectly cooked noodles, tossed in a flavorful blend of spices</p>
 
-@media(max-width:500px){
-  .footer{
-    height: fit-content;
-    font-size: 10px;
-  }
+                  <button class="btn btn-danger mb-3">Order Now</button>
 
-  .follow img{
-    height: 2rem;
+              </div>
 
-  }
+            </section>
 
-  .footer-content{
-    flex-direction: row
-    !important;
+          </div>
+          <!--/ 4th -->
 
-    justify-content: space-between;
-    
+          <!-- 5th -->
+          <div class="col-lg-6 p-2 ">
 
-    gap: 15px;
-  }
+            <section class="shadow-lg food-menu-section d-flex ">
+
+              <div class="food-menu-img food-menu-img-left">
+                <img src="Resources/mojito.jpg" alt="" class="foods-img">
+              </div>
+
+              <div class="food-menu-desc w-100 d-flex flex-column justify-content-center align-items-center">
+
+                  <h4 class="lead text-center mt-3">Mojito</h4>
+
+                  <p class="lead text-center fw-bold">₹99</p>
+
+                  <p class="text-center text-muted  mx-2">Refresh your senses with our classic mojito, a perfect blend of zesty lime, fresh mint leaves</p>
+
+                  <button class="btn btn-danger mb-3">Order Now</button>
+
+              </div>
+
+            </section>
+
+          </div>
+          <!-- 5th -->
+
+          <!-- 6th -->
+          <div class="col-lg-6 p-2 ">
+
+            <section class="shadow-lg  food-menu-section d-flex ">
+
+              <div class="food-menu-img food-menu-img-left">
+                <img src="Resources/pasta.jpg" alt="" class="foods-img">
+              </div>
+
+              <div class="food-menu-desc w-100 d-flex flex-column justify-content-center align-items-center">
+
+                  <h4 class="lead text-center mt-3">Pasta</h4>
+
+                  <p class="lead text-center fw-bold">₹229</p>
+
+                  <p class="text-center text-muted  mx-2">Al dente pasta coated in a rich, creamy Alfredo sauce, topped with fresh herbs and a sprinkle of Parmesan</p>
+
+                  <button class="btn btn-danger mb-3">Order Now</button>
+
+              </div>
+
+            </section>
+
+          </div>
+          <!-- 6th -->
+
+     
+
+        </div>
+
+        <div class="d-flex justify-content-center"><a href="http://127.0.0.1:5500/Explore-food/index.html" class="text-center btn my-3 text-danger">Explore more</a></div>
+
+    </div>
+
+    </div>
+    <!-- explore foods | food menu ends---------->
+
+    <!-- banner starts------------------------ -->
+     <div class="banner-section">
+      
+     </div>
+    <!-- banner ends-------------------------- -->
 
   
-}
 
-/* .footer .row-2 .col-md-3{
-  border: 1px solid rgb(255, 255, 255);
-} */
+    <!-- about-us, visions starts------------- -->
+     
+    <!-- about us section starts----->
+    <div class="about-us-section my-5">
+      
+      <div class="container-fluid h-100">
+        <div class="about-us-row row h-100">
 
-/* footer ends----------------------------------------------- */
+          <div class="about-us-img col-lg-6 rounded">
+            .
+          </div>
+
+          <div class="about-us-desc col-lg-6 ">
+            
+            <div class="row py-lg-3">
+
+              <h3 class="text-center display-6">About us</h3>
+
+              <p class="about-us-para text-center my-lg-5 px-5">
+                Snappy Restaurant is dedicated to providing an exceptional dining experience that combines culinary excellence with a warm and inviting atmosphere. Our journey began with a passion for creating memorable meals that bring people together. We pride ourselves on using the freshest ingredients, sourced locally whenever possible, to craft dishes that delight the senses Our team of skilled chefs and attentive staff work tirelessly to ensure that every visit to Snappy Restaurant is a delightful experience. Whether you're joining us for a quick bite or a leisurely meal, we strive to make each moment special.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- about us section ends------->
+
+    <!-- vision section starts ------>
+
+    <div class="vision-section my-5">
+      
+      <div class="container-fluid h-100">
+
+        <div class="row h-100">
+
+          <div class="vision-desc col-lg-6">
+            
+            <div class="row py-lg-3">
+              
+              <h3 class="text-center display-6">Our Vision</h3>
+
+              <p class="vision-para text-center my-lg-5 px-5">
+                At Snappy Restaurant, our vision is to be the go-to destination for food lovers seeking a blend of innovation and tradition. We aim to continuously evolve our menu to reflect the diverse flavors of the world while staying true to our roots. Our commitment to sustainability and community engagement drives us to make a positive impact beyond our restaurant walls.
+                We envision a future where Snappy Restaurant is synonymous with quality, creativity, and exceptional service. By fostering a culture of excellence and passion, we aspire to create lasting memories for our guests, one plate at a time.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="vision-img col-lg-6 bg-success rounded">
+            .
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- vision section ends------ -->
+
+   
+
+    <!-- about-us, visions ends--------------- -->
+
+
+
+
+
+
+
+    <!-- client starts--------------------------->
+    <div class="client mb-5 ">
+      <div class="container h-100 ">  
+
+                <div class="row row-1">          
+                  <h6 class="text-center customer-comments display-6 my-4 text-muted" >What our customers says</h6>
+                </div>
+
+                <div class="row-2 row gy-3">    
+
+                      <div class="col-md-4">            
+                        
+                        <section class="rounded shadow-lg">
+                          
+                          <img src="Resources/Person/jane-person-removebg-preview.png" alt="" class="rounded my-2">
+
+                          <h6 class="display-6">Jane</h6>
+
+                          <p class="p-2 text-center">"Absolutely loved my experience at Snappy Restaurant! The food was fresh, flavorful, and came out quickly. The staff was super friendly and attentive. I highly recommend the avocado toast—it was divine!"</p>
+
+                                  <div class="star-rating">
+                                        <span onclick="gfg(1)"
+                                                class="star">★
+                                        </span>
+                                        <span onclick="gfg(2)"
+                                        class="star">★
+                                        </span>
+                                        <span onclick="gfg(3)"
+                                              class="star">★
+                                        </span>
+                                        <span onclick="gfg(4)"
+                                              class="star">★
+                                        </span>
+                                        <span onclick="gfg(5)"
+                                              class="star">★
+                                        </span>
+                                        <h6 id="output">
+                                              Rating is: 0/5
+                                          </h6>
+                                    
+                                  </div>
+
+                        </section>
+
+                      </div>
+
+                      <div class="col-md-4">            
+                        
+                        <section class="rounded shadow-lg">
+                          
+                          <img src="Resources/Person/Jacob-person.png" alt="" class="rounded">
+
+                          <h6 class="display-6">John</h6>
+
+                          <p class="p-2 text-center">"Great experience overall! The food was delicious and came out quickly, which I really appreciated. The service was friendly, but the restaurant was a bit noisy, making it hard to have a conversation. Still, I’d definitely come back!"</p>
+
+                          <div class="star-rating">
+                            <span onclick="gfg(1)"
+                                    class="star">★
+                            </span>
+                            <span onclick="gfg(2)"
+                            class="star">★
+                            </span>
+                            <span onclick="gfg(3)"
+                                  class="star">★
+                            </span>
+                            <span onclick="gfg(4)"
+                                  class="star">★
+                            </span>
+                            <span onclick="gfg(5)"
+                                  class="star">★
+                            </span>
+                            <h6 id="output">
+                                  Rating is: 0/5
+                              </h6>
+                        
+                      </div>
+
+                        </section>
+
+                      </div>
+
+                      <div class="col-md-4">            
+                        
+                        <section class="rounded shadow-lg ">
+                          
+                          <img src="Resources/Person/mike-person-removebg-preview.png" alt="" class="rounded">
+
+                          <h6 class="display-6">Mike</h6>
+
+                          <p class="p-2 text-center">"Solid spot for a quick meal! The food was tasty, and the service was fast. I had the BBQ burger, and it was juicy and flavorful. The only downside was that the place was a bit noisy. Still, I’d recommend it!"</p>
+
+                          <div class="star-rating">
+                            <span onclick="gfg(1)"
+                                    class="star">★
+                            </span>
+                            <span onclick="gfg(2)"
+                            class="star">★
+                            </span>
+                            <span onclick="gfg(3)"
+                                  class="star">★
+                            </span>
+                            <span onclick="gfg(4)"
+                                  class="star">★
+                            </span>
+                            <span onclick="gfg(5)"
+                                  class="star">★
+                            </span>
+                            <h6 id="output">
+                                  Rating is: 0/5
+                              </h6>
+                        
+                      </div>
+
+                        </section>
+
+                      </div>
+
+          
+                </div>
+
+
+          
+        </div>
+    </div>
+    <!-- client ends----------------------------->
+
+    <!-- footer starts------------------------ -->
+    <footer class="footer bg-dark mb-5">
+
+      <div class="row row-1 h-25">
+          <div class="container h-100 py-2">
+            <div class="row row-1 social-row justify-content-center h-100">
+
+              <!-- follow-us starts -->
+              <div class="follow col-lg-6 d-flex justify-content-center align-items-center gap-1">
+
+                <h6 class="lead text-white">Follow us on</h6>
+                
+                <img src="Resources/social-icons/fb/icons8-facebook-windows-11-color-70.png" alt="" class="follow-img img-fluid">
+
+                <img src="Resources/social-icons/insta/icons8-instagram-color-hand-drawn-70.png" alt="" class="follow-img img-fluid">
+
+                <img src="Resources/social-icons/x/icons8-twitter-lollipop-70.png" alt="" class="follow-img img-fluid">
+
+                
+              </div>
+              <!-- follow-us-ends -->
+
+            </div>
+          </div>
+      </div>
+
+      <div class=" row row-2  h-75">
+        
+        <div class="col-md-3 p-lg-5">
+
+          <!-- logo -->
+          <div class="logo d-flex justify-content-center gap-1 mx-3 p-2" >
+            <img src="Resources/snappy logo.png" alt="" height="55px" >
+            <h3 class=" mt-3" style="text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.507);" >Snappy</h3>
+          </div >
+          <!-- /logo -->
+
+          <!-- copyright -->
+          <div class="copyright">
+            <p class="text-center text-white lead">All rights reserved By <br><a href="#" class="text-warning lead">&copy SNAPPY</a></p>
+          </div>
+          <!-- /copyright -->
+
+        </div>
+
+        <div class="footer-content col-md-3 d-flex align-items-center justify-content-center flex-column p-1">
+          <p class="text-light ">Company</p>
+          <p class="text-light ">Snappy Restaurant</p>
+          <p class="text-light ">Team</p>
+          <p class="text-light ">Careers</p>
+        </div>
+
+        <div class="footer-content col-md-3 d-flex align-items-center justify-content-center flex-column p-1">
+          <p class="text-light ">About us</p>
+          <p class="text-light">Help</p>
+          <p class="text-light">Partner with us</p>
+          <p class="text-light">Careers</p>
+          
+
+          
+        </div>
+
+        <div class=" col-md-3 d-flex align-items-center justify-content-center flex-column p-1">
+          <p class="text-light">Address : Snappy Restaurant <br> XYZ street, Banglore</p>
+          <p class="text-light">Phone : +919876543210</p>
+          <p class="text-light">Email : snappyrestaurant@hotmail.com</p>
+          <p class="text-light">Opening Hours : 10.00 AM to 11.00 AM</p>
+        </div>
+
+      </div>
+
+    </footer>
+    <!-- footer ends-------------------------- -->
+   
+   
+
+<!-- end -->
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- script for rating star -->
+    <!-- <script>// script.js
+      let stars = 
+        document.getElementsByClassName("star");
+      let output = 
+        document.getElementById("output");
+      function gfg(n) {
+        remove();
+        for (let i = 0; i < n; i++) {
+          if (n == 1) cls = "one";
+          else if (n == 2) cls = "two";
+          else if (n == 3) cls = "three";
+          else if (n == 4) cls = "four";
+          else if (n == 5) cls = "five";
+          stars[i].className = "star " + cls;
+        }
+        output.innerText = "Rating is: " + n + "/5";
+      }
+      function remove() {
+        let i = 0;
+        while (i < 5) {
+          stars[i].className = "star";
+          i++;
+        }
+      }
+    </script> -->
+
+  </body>
+</html>
