@@ -21,6 +21,204 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+IT+Moderna:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
+    <style>
+      /* general styles */
+body{
+  background-color: #ffce0c22;
+  height: 100vh;
+  scroll-behavior: smooth;
+
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.152);
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+
+/* navbar starts ------------------------------------------*/
+
+.navbar {
+  z-index: 1000;
+}
+
+.logo h3{
+  
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: normal;
+
+}
+
+/* navbar ends */
+
+/* hero starts --------------------------------------------*/
+
+.hero{   
+  
+  height: 100vh;
+
+}
+
+.hero-container{
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 208, 255, 0.092),rgba(1, 95, 162, 0.111),rgba(53, 177, 249, 0.116)),url(Resources/AIEASE_2025-03-05-16-45-42-694.jpeg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.hero-container h2{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: normal;
+  
+  text-shadow: 1px 1px 1px black;
+}
+
+.hero-form input[type="text"]{
+  border: none;
+  height: 40px;
+  width: 50%;
+  border-radius: 5rem 0 0 5rem;
+  outline: none;
+}
+
+.hero-form input[type="submit"]{
+  border: none;
+  height: 40px;
+  width: 5rem;
+  border-radius: 0 5rem 5rem 0;
+  color: white;
+  background-color: rgb(205, 50, 50);
+}
+
+.book-table{
+  height:fit-content;
+  width: 100%;
+  
+}
+
+.book-table-blk{
+   background-color: rgba(0, 0, 0, 0.34);
+   padding: 10%;
+}
+
+.book-table .col-lg-6{
+  border: 1px solid rgba(255, 255, 255, 0.196);
+  
+}
+
+.reservation-form input{
+  width: 50%;
+}
+
+.notify-icon{
+  background-color: rgb(38, 255, 0);
+  height: 1rem;
+  width: 1rem;
+  border-radius: 0.5rem;
+}
+
+@media(max-width:500px){
+  .reservation-form input{
+    width: 90%;
+  }
+}
+
+
+
+/* hero ends */
+
+/* categories starts---------------------------------- */
+
+.categories{
+  height: 70vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.category-section{
+  height: 100%;
+}
+
+@media(max-width:500px){
+  .categories{
+    height:100vh;
+  }
+
+  .category-section{
+  /* height: 20vh; */
+  }
+}
+.categories .container{
+  height: 100%;
+}
+
+.categories .container .row-1{
+
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.categories .container .row-2{
+  height: 65%;
+}
+
+.categories .container .row-2 .item-1 section{
+  background: linear-gradient(rgba(0, 208, 255, 0.092),rgba(1, 95, 162, 0.111),rgba(53, 177, 249, 0.116)),url(Resources/burger.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  
+}
+
+.categories .container .row-2 .item-1 section h4{ 
+  text-shadow: 2px 2px 10px rgb(0, 0, 0);
+ }
+
+ .categories .container .row-2 .item-2 section h4{ 
+  text-shadow: 2px 2px 10px rgb(0, 0, 0);
+ }
+
+ .categories .container .row-2 .item-3 section h4{ 
+  text-shadow: 2px 2px 10px rgb(0, 0, 0);
+ }
+
+.categories .container .row-2 .item-2 section{
+  background: linear-gradient(rgba(0, 208, 255, 0.092),rgba(1, 95, 162, 0.111),rgba(53, 177, 249, 0.116)), url(Resources/pizza.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.categories .container .row-2 .item-3 section{
+  background: linear-gradient(rgba(0, 208, 255, 0.092),rgba(1, 95, 162, 0.111),rgba(53, 177, 249, 0.116)), url(Resources/momo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.categories .container .row-2 .item-1 section:hover {
+  transform: scale3d(1.05, 1.05, 1.01); 
+}
+
+.categories .container .row-2 .item-2 section:hover {
+  transform: scale3d(1.05, 1.05, 1.01);
+}
+
+.categories .container .row-2 .item-3 section:hover {
+  transform: scale3d(1.05, 1.05, 1.01); 
+}
+
+
+/* categories ends---------------------------------- */
+    </style>
+
   </head>
   <body>
 
@@ -366,7 +564,7 @@
       
      </div>
     <!-- banner ends-------------------------- -->
-     
+
     <!-- about-us, visions starts------------- -->
 
     <!-- about us section starts----->
